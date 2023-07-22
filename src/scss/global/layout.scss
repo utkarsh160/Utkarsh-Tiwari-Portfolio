@@ -1,0 +1,11 @@
+@use '../utils/' as *;
+
+body{
+    @include breakpoint(sm) {
+        background-color: red;
+    }
+    
+    @include breakpoint(lg) {
+        background-color: blue;
+    }
+}
