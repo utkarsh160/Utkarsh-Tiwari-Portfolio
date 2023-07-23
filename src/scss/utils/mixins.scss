@@ -73,6 +73,7 @@
     width: 100%;
 }
 
+
 @each $name,$value in $colors{
     .n-#{$name}{
         color: $value;

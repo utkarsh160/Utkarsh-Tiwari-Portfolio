@@ -1,0 +1,17 @@
+@use '../utils/' as *;
+
+.header-main{
+    @include flex-container(row,center,space-between);
+    @include padding(rem(28px),rem(60px),rem(28px),rem(60px));
+    background-color: #0a192f;
+    // position: fixed;
+    // top: 0;
+
+
+    nav{
+        ul{
+            @include flex-container(row,center,space-between);
+            min-width: 600px;
+        }
+    }
+}

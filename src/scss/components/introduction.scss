@@ -1,0 +1,44 @@
+@use '../utils/' as *;
+
+.introduction-main{
+    @include flex-container(row,space-around,flex-start);
+    gap: rem(20px);
+    color: #64ffda;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.introduction-left{
+    @include flex-container(column,flex-start,flex-start);
+    gap: rem(20px);
+    // position: relative;
+    // z-index: 4;
+}
+
+.introduction-right{
+    @include flex-container(column,flex-end,center);
+    
+    span{
+        @include flex-container(row,center,center);
+        width: 500px;
+        height: 500px;
+    }
+}
+
+.introduction-name{
+    font-size: rem(98px);
+    font-weight: 500;
+    color: #CCDCF6;
+}
+
+.introduction-position{
+    font-size: rem(54px);
+    font-weight: 400;
+    color: #8892B0;
+}
+
+// .blobs{
+//     position: absolute;
+//     z-index: -1;
+//     top: -10%;
+// }

@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import React from 'react'
 
 const Header = () => {
@@ -9,10 +10,15 @@ const Header = () => {
             </div>
             <nav>
                 <ul>
-                    <li className='n-red'>About</li>
-                    <li className='n-uppercase'>Experience</li>
-                    <li className='n-font-one'>Work</li>
+                    <li>About</li>
+                    <li>Experience</li>
+                    <li>Work</li>
                     <li>Contact</li>
+                    <li>
+                        <Link className='primary-btn'>
+                            Resume
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         </header>

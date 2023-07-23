@@ -1,0 +1,6 @@
+@use '../utils/' as *;
+
+.work-main{
+    @include flex-container(column,flex-start,flex-start);
+
+}
