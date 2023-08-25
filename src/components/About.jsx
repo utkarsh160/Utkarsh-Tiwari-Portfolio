@@ -1,10 +1,20 @@
 import React from 'react'
 import UtkarshImage from '../images/Utkarsh-Image.jpg'
+import JavascriptLogo from '../images/Javascript.svg'
+import PythonLogo from '../images/Python.svg'
+import ReactJsLogo from '../images/ReactJs.svg'
+import ReduxLogo from '../images/Redux.svg'
+import GatsbyJsLogo from '../images/Gatsby.svg'
+import StrapiLogo from '../images/Strapi.svg'
+import DjangoLogo from '../images/Django.svg'
+import NodeJsLogo from '../images/NodeJs.svg'
+import SqlLogo from '../images/MySql.svg'
+import MongoDbLogo from '../images/MongoDb.svg'
 
 const About = () => {
   return (
     <>
-    <section className="about-main">
+    <section className="about-main" id='about-main-section'>
         <h1 className='portfolio-heading n-font-2'>About</h1>
         <div className="about-main-wrapper">
             <div className="about-left">
@@ -17,11 +27,100 @@ const About = () => {
                     <div className="about-image">
                         <img src={UtkarshImage} alt=''/>
                     </div>
-                    <div className="about-box">
-                        
+                    <div className="about-box">                       
                     </div>
                 </div>
             </div>
+        </div>
+        <div className="about-sub-main-wrapper">
+        <p id='about-sub-heading'>Here are a few technologies I’ve been working</p>
+        <div className="technology-wrapper">
+                <ul>
+                    <li>
+                        <div className="list-wrapper">
+                            <span>
+                                <img src={JavascriptLogo} alt=""/>
+                            </span>
+                            <p>Javascript</p>
+                        </div>
+                    </li>
+                    <li>
+                    <div className="list-wrapper">
+                            <span>
+                                <img src={PythonLogo} alt=""/>
+                            </span>
+                            <p>Python</p>
+                        </div>
+                    </li>
+                    <li>
+                    <div className="list-wrapper">
+                            <span>
+                                <img src={DjangoLogo} alt=""/>
+                            </span>
+                            <p>Django</p>
+                        </div>
+                    </li>
+                    <li>
+                    <div className="list-wrapper">
+                            <span>
+                                <img src={NodeJsLogo} alt=""/>
+                            </span>
+                            <p>Node Js</p>
+                        </div>
+                    </li>
+                    <li>
+                    <div className="list-wrapper">
+                            <span>
+                                <img src={ReactJsLogo} alt=""/>
+                            </span>
+                            <p>React Js</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                <li>
+                    <div className="list-wrapper">
+                            <span>
+                                <img src={SqlLogo} alt=""/>
+                            </span>
+                            <p>SQL</p>
+                        </div>
+                    </li>
+
+                    <li>
+                    <div className="list-wrapper">
+                            <span>
+                                <img src={GatsbyJsLogo} alt=""/>
+                            </span>
+                            <p>Gatsby Js</p>
+                        </div>
+                    </li>
+                    <li>
+                    <div className="list-wrapper">
+                            <span>
+                                <img src={StrapiLogo} alt=""/>
+                            </span>
+                            <p>Strapi</p>
+                        </div>
+                    </li>
+                    <li>
+                    <div className="list-wrapper">
+                            <span>
+                                <img src={ReduxLogo} alt=""/>
+                            </span>
+                            <p>Redux</p>
+                        </div>
+                    </li>
+                    <li>
+                    <div className="list-wrapper">
+                            <span>
+                                <img src={MongoDbLogo} alt=""/>
+                            </span>
+                            <p>MongoDb</p>
+                        </div>
+                    </li>
+                </ul>
+        </div>
         </div>
     </section>
     </>

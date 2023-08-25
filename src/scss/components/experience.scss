@@ -17,6 +17,7 @@
     background: #112240;
     border-radius: 4px;
     padding: 2rem 1.75rem;
+    gap: 16px;
 }
 
 
@@ -45,9 +46,36 @@
 .experience-main-card-two{
     ul{
         @include flex-container(column,flex-start,flex-start);
-
-        // li{
-        //     list-style-image: url();
-        // }
+        gap: 20px;
     }
+
+
+
+}
+
+
+.experience-main-card-list-item{
+    @include flex-container(row,flex-start,center);
+    gap: 16px;
+
+    li{
+        display: inline;
+        color: #a8b2d1;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 300;
+        width: 100%;
+        font-family: 'Fira Sans', sans-serif;
+
+        span{
+            color: #64ffda;
+            font-weight: 400;
+        }
+    }
+}
+
+.experience-card-pointer-wrapper{
+    @include flex-container(row,center,center);
+    width: 8px;
+    height: 16px;  
 }

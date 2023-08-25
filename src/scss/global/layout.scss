@@ -14,12 +14,12 @@ body{
 
 .primary-btn{
     @include flex-container(row,center,center);
-    cursor: pointer;
     border: 1px solid #64ffda;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 10px 16px;
     color: #64ffda;
     font-weight: 500;
+    font-family: 'Fira Code', monospace;
 }
 
 .portfolio-heading{

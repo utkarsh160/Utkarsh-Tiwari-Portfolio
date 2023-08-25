@@ -19,17 +19,22 @@ const Homepage = () => {
         <div className="contact-details">
             <div className="contact-details-one">
             <ul>
-                <li><img src={Github} alt=''/></li>
-                <li><img src={Linkedin} alt=''/></li>
-                <li><img src={Twitter} alt=''/></li>
-                <li><img src={Instagram} alt=''/></li>
+                <Link to='https://github.com/utkarsh160'>
+                <li><img src={Github} alt='Github'/></li>
+                </Link>
+                <Link to='https://www.linkedin.com/in/utkarshtiwari160/'>
+                <li><img src={Linkedin} alt='Linkedin'/></li>
+                </Link>
+                <Link to='https://www.instagram.com/utkarsh14.vashisht/'>
+                <li><img src={Instagram} alt='Instagram'/></li>
+                </Link>
             </ul>
             </div>
 
         </div>
         <div className="email-details">
             <div className="email-details-one">
-            <Link className='email' to="/">tutkarsh160@gmail.com</Link>
+            <Link className='email' to="mailto:tutkarsh@gmail.com">tutkarsh160@gmail.com</Link>
             </div>
         </div>
         <div className="homepage-main">
