@@ -58,6 +58,8 @@
 }
 
 #hamburger-icon{
+    width: 30px;
+    height: 30px;
     @include breakpoint(lg,min){
         display: none;
     }
@@ -68,6 +70,8 @@
 }
 
 #close-icon{
+    width: 30px;
+    height: 30px;
     @include breakpoint(lg,min){
         display: none;
     }
