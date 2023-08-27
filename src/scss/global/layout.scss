@@ -10,6 +10,7 @@ body{
 
 .layout{
     @include flex-container(column,center,center);
+    overflow: hidden;
 }
 
 .primary-btn{
@@ -32,6 +33,21 @@ body{
     font-size: 30px;
     white-space: nowrap;
     font-weight: 700;
+
+    @include breakpoint(sm,max){
+        font-size: 24px;
+        margin: 10px 0px 20px;
+    }
+
+    @include breakpoint(md,max){
+        font-size: 24px;
+        margin: 10px 0px 20px;
+    }
+
+    @include breakpoint(lg,max){
+        font-size: 24px;
+        margin: 10px 0px 20px;
+    }
 }
 
 

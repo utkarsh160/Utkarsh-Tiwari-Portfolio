@@ -6,6 +6,25 @@
     color: #64ffda;
     font-weight: 600;
     font-size: 20px;
+    height: 50vh;
+
+    @include breakpoint(sm,max){
+        font-size: 16px;
+        font-weight: 400;
+        height: 18vh;
+    }
+
+    @include breakpoint(md,max){
+        font-size: 16px;
+        font-weight: 400;
+        height: 18vh;
+    }
+
+    @include breakpoint(lg,max){
+        font-size: 16px;
+        font-weight: 400;
+        height: 18vh;
+    }
 }
 
 .introduction-left{
@@ -26,15 +45,39 @@
 }
 
 .introduction-name{
-    font-size: rem(98px);
+    font-size: 6.125rem;
     font-weight: 500;
     color: #CCDCF6;
+
+    @include breakpoint(sm,max){
+        font-size: 3.125rem;
+    }
+
+    @include breakpoint(md,max){
+        font-size: 3.125rem;
+    }
+
+    @include breakpoint(lg,max){
+        font-size: 3.125rem;
+    }
 }
 
 .introduction-position{
-    font-size: rem(54px);
+    font-size: 3.375rem;
     font-weight: 400;
     color: #8892B0;
+
+    @include breakpoint(sm,max){
+        font-size: 1.5rem;
+    }
+
+    @include breakpoint(md,max){
+        font-size: 1.5rem;
+    }
+
+    @include breakpoint(lg,max){
+        font-size: 1.5rem;
+    }
 }
 
 // .blobs{

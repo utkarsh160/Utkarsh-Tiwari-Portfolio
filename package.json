@@ -19,7 +19,6 @@
     "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-sass": "^6.11.0",
     "react": "^18.2.0",
-    "react-animated-cursor": "^2.8.1",
     "react-dom": "^18.2.0",
     "sass": "^1.64.1",
     "typewriter-effect": "^2.20.1"

@@ -2,14 +2,26 @@
 
 .header-main{
     @include flex-container(row,center,space-between);
-    @include padding(rem(28px),rem(60px),rem(28px),rem(60px));
+    padding: 1.75rem 3.75rem;
+    position: relative;
     background-color: #0a192f;
     font-family: 'Fira Code', monospace;
-    // position: fixed;
-    // top: 0;
 
 
-    nav{
+    @include breakpoint(sm,max){
+        padding: 0.75rem 1rem;
+    }
+
+    @include breakpoint(md,max){
+        padding: 0.75rem 1rem;
+    }
+
+    @include breakpoint(lg,max){
+        padding: 0.75rem 1rem;
+    }
+
+
+    .header-nav{
         ul{
             @include flex-container(row,center,space-between);
             min-width: 600px;
@@ -18,6 +30,38 @@
                 color: #CCDCF6;
             }
         }
+
+        @include breakpoint(sm,max){
+            display: none;
+        }
+
+        @include breakpoint(md,max){
+            display: none;
+        }
+
+        @include breakpoint(lg,max){
+            display: none;
+        }
+    }
+}
+
+#hamburger-icon{
+    @include breakpoint(lg,min){
+        display: none;
+    }
+
+    @include breakpoint(xl,min){
+        display: none;
+    }
+}
+
+#close-icon{
+    @include breakpoint(lg,min){
+        display: none;
+    }
+
+    @include breakpoint(xl,min){
+        display: none;
     }
 }
 
@@ -30,4 +74,57 @@
     height: 50px;
     color: #64ffda;
     font-weight: 800;
+
+    @include breakpoint(sm,max){
+        width: 35px;
+        height: 35px;
+    }
+
+    @include breakpoint(md,max){
+        width: 35px;
+        height: 35px;
+    }
+
+    @include breakpoint(lg,max){
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.sidebar-main{
+    @include flex-container(column,center,flex-start);
+    position: absolute;
+    background: #112240;
+    padding: 2rem 1rem;
+    max-width: 310px;
+    height: 100vh;
+    z-index: 10;
+    top: 60px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    transition: all 0.4s ease;
+
+    .sidebar-nav{
+        ul{
+            @include flex-container(column,center,center);
+            gap: 3rem;
+
+            li{
+                color: #CCDCF6;
+            }
+        }
+    }
+
+    @include breakpoint(xl,min){
+        display: none;
+    }
+}
+
+.sidebar-main-hide{
+    right: -100%;
+}
+
+.sidebar-main-show{
+    right: 0%;
 }

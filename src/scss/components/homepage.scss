@@ -2,9 +2,24 @@
 
 .homepage-main{
     @include flex-container(column,center,center);
-    @include padding(rem(180px),rem(160px),rem(80px),rem(160px));
+    padding: 10.25rem 10rem 5rem 10rem;
     position: relative;
-    gap: rem(220px);
+    gap: 8rem;
+
+    @include breakpoint(sm,max){
+        padding: 2.25rem 1rem 2rem 1rem;
+        gap: 2.75rem;
+    }
+
+    @include breakpoint(md,max){
+        padding: 2.25rem 1rem 2rem 1rem;
+        gap: 4.75rem;
+    }
+
+    @include breakpoint(lg,max){
+        padding: 2.25rem 1rem 2rem 1rem;
+        gap: 4.75rem;
+    }
 }
 
 .contact-details{
@@ -15,6 +30,18 @@
     right: auto;
     left: 60px;
     z-index: 10;
+
+    @include breakpoint(sm,max){
+        display: none;
+    }
+
+    @include breakpoint(md,max){
+        display: none;
+    }
+
+    @include breakpoint(lg,max){
+        display: none;
+    }
 
     ul{
     display: flex;
@@ -51,6 +78,18 @@
     right: 60px;
     z-index: 10;
     // transform: rotate(90deg);
+
+    @include breakpoint(sm,max){
+        display: none;
+    }
+
+    @include breakpoint(md,max){
+        display: none;
+    }
+
+    @include breakpoint(lg,max){
+        display: none;
+    }
 }
 
 .email-details-one{

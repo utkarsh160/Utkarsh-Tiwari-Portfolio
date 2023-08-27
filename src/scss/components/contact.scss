@@ -6,7 +6,19 @@
 
 .contact-main-wrapper{
     @include flex-container(column,flex-start,flex-start);
-    gap: rem(40px);
+    gap: 2.5rem;
+
+    @include breakpoint(sm,max){
+        gap: 1rem;
+    }
+
+    @include breakpoint(md,max){
+        gap: 1rem;
+    }
+
+    @include breakpoint(lg,max){
+        gap: 1rem;
+    }
 
     p{
         color: #a8b2d1;
@@ -15,11 +27,35 @@
         font-weight: 300;
         width: 100%;
         font-family: "Fira Sans", sans-serif;
+
+        @include breakpoint(sm,max){
+            font-size: 13px;
+        }
+    
+        @include breakpoint(md,max){
+            font-size: 13px;
+        }
+    
+        @include breakpoint(lg,max){
+            font-size: 13px;
+        }
     }
 
     ul{
         @include flex-container(row,center,center);
         gap: 20px;
+
+        @include breakpoint(sm,max){
+            @include flex-container(column,flex-start,flex-start);
+        }
+    
+        @include breakpoint(md,max){
+            @include flex-container(column,flex-start,flex-start);
+        }
+    
+        @include breakpoint(lg,max){
+            @include flex-container(column,flex-start,flex-start);
+        }
 
         li{
             @include flex-container(column,flex-start,flex-start);
@@ -32,6 +68,18 @@
                 font-weight: 300;
                 width: 100%;
                 font-family: "Fira Sans", sans-serif;
+
+                @include breakpoint(sm,max){
+                    font-size: 13px;
+                }
+            
+                @include breakpoint(md,max){
+                    font-size: 13px;
+                }
+            
+                @include breakpoint(lg,max){
+                    font-size: 13px;
+                }
             }
 
             button{
@@ -44,6 +92,21 @@
                 background: #112240;
                 border-radius: 4px;
 
+                @include breakpoint(sm,max){
+                    padding: 0.5rem 1rem;
+                    min-width: 125px;
+                }
+            
+                @include breakpoint(md,max){
+                    padding: 0.5rem 1rem;
+                    min-width: 125px;
+                }
+            
+                @include breakpoint(lg,max){
+                    padding: 0.5rem 1rem;
+                    min-width: 125px;
+                }
+
 
                 p{
                     color: #a8b2d1;
@@ -55,6 +118,27 @@
                     min-height: 25px;
                     max-width: 25px;
                     max-height: 25px;
+
+                    @include breakpoint(sm,max){
+                        min-width: 20px;
+                        min-height: 20px;
+                        max-width: 20px;
+                        max-height: 20px;
+                    }
+                
+                    @include breakpoint(md,max){
+                        min-width: 20px;
+                        min-height: 20px;
+                        max-width: 20px;
+                        max-height: 20px;
+                    }
+                
+                    @include breakpoint(lg,max){
+                        min-width: 20px;
+                        min-height: 20px;
+                        max-width: 20px;
+                        max-height: 20px;
+                    }
                 }
 
                 &:hover{

@@ -7,6 +7,18 @@
 
 .about-main-wrapper{
     @include flex-container(row,center,center);
+
+    @include breakpoint(sm,max){
+        @include flex-container(column,center,center);
+    }
+
+    @include breakpoint(md,max){
+        @include flex-container(column,center,center);
+    }
+
+    @include breakpoint(lg,max){
+        @include flex-container(column,center,center);
+    }
 }
 
 .about-left{
@@ -19,11 +31,35 @@
         font-weight: 300;
         width: 100%;
         font-family: 'Fira Sans', sans-serif;
+
+        @include breakpoint(sm,max){
+            font-size: 13px;
+        }
+    
+        @include breakpoint(md,max){
+            font-size: 13px;
+        }
+    
+        @include breakpoint(lg,max){
+            font-size: 13px;
+        }
     }
 }
 
 .about-right{
     @include flex-container(row,flex-start,center);
+
+    @include breakpoint(sm,max){
+        margin-top: 8rem;
+    }
+
+    @include breakpoint(md,max){
+        margin-top: 8rem;
+    }
+
+    @include breakpoint(lg,max){
+        margin-top: 8rem;
+    }
 }
 
 .about-image-wrapper{
@@ -41,6 +77,21 @@
     filter: grayscale(100%);
     transition: all 0.2s;
     position: absolute;
+
+    @include breakpoint(sm,max){
+        width: 200px;
+        height: 200px;
+    }
+
+    @include breakpoint(md,max){
+        width: 200px;
+        height: 200px;
+    }
+
+    @include breakpoint(lg,max){
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .about-box{
@@ -55,6 +106,21 @@
     transform: translate(-43%, -43%);
     z-index: -10;
     transition: all 0.2s;
+
+    @include breakpoint(sm,max){
+        width: 200px;
+        height: 200px;
+    }
+
+    @include breakpoint(md,max){
+        width: 200px;
+        height: 200px;
+    }
+
+    @include breakpoint(lg,max){
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .about-image-wrapper:hover > .about-image{
@@ -70,19 +136,45 @@
 .about-sub-main-wrapper{
     @include flex-container(column,center,center);
     margin-top: 3rem;
+
+    @include breakpoint(sm,max){
+        margin-top: 8rem;
+    }
+
+    @include breakpoint(md,max){
+        margin-top: 8rem;
+    }
+
+    @include breakpoint(lg,max){
+        margin-top: 8rem;
+    }
 }
 
 #about-sub-heading{
     display: inline;
     color: #CCDCF6;
     font-size: 30px;
-    white-space: nowrap;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 40px;
     width: 100%;
     font-family: "Fira Sans", sans-serif;
     margin: 2.5rem 0rem;
     text-align: center;
+
+    @include breakpoint(sm,max){
+        font-size: 24px;
+        margin: 1.5rem 0rem;
+    }
+
+    @include breakpoint(md,max){
+        font-size: 24px;
+        margin: 1.5rem 0rem;
+    }
+
+    @include breakpoint(lg,max){
+        font-size: 24px;
+        margin: 1.5rem 0rem;
+    }
 }
 
 .technology-wrapper{
@@ -93,10 +185,34 @@
     border-radius: 4px;
     padding: 2rem 1.75rem;
 
+    @include breakpoint(sm,max){
+        @include flex-container(row,center,center);
+    }
+
+    @include breakpoint(md,max){
+        @include flex-container(row,center,center);
+    }
+
+    @include breakpoint(lg,max){
+        @include flex-container(row,center,center);
+    }
+
     ul{
         @include flex-container(row,center,center);
         // max-width: 200px;
         gap: 10px;
+
+        @include breakpoint(sm,max){
+            @include flex-container(column,center,center);
+        }
+    
+        @include breakpoint(md,max){
+            @include flex-container(column,center,center);
+        }
+    
+        @include breakpoint(lg,max){
+            @include flex-container(column,center,center);
+        }
     }
 }
 
@@ -114,6 +230,17 @@
         font-weight: 600;
         width: 100%;
         font-family: "Fira Sans", sans-serif;
-        // text-align: center;
+
+        @include breakpoint(sm,max){
+            font-size: 14px;
+        }
+    
+        @include breakpoint(md,max){
+            font-size: 14px;
+        }
+    
+        @include breakpoint(lg,max){
+            font-size: 14px;
+        }
     }
 }

@@ -18,6 +18,19 @@
     border-radius: 4px;
     padding: 2rem 1.75rem;
     gap: 16px;
+
+    @include breakpoint(sm,max){
+        padding: 2rem 0.75rem;
+    }
+
+    @include breakpoint(md,max){
+        padding: 2rem 0.75rem;
+    }
+
+    @include breakpoint(lg,max){
+        padding: 2rem 0.75rem;
+    }
+
 }
 
 
@@ -32,6 +45,21 @@
         color: #ccd6f6;
         font-weight: 400;
 
+        @include breakpoint(sm,max){
+            font-size: 14px;
+            font-weight: 500;
+        }
+    
+        @include breakpoint(md,max){
+            font-size: 14px;
+            font-weight: 500;
+        }
+    
+        @include breakpoint(lg,max){
+            font-size: 14px;
+            font-weight: 500;
+        }
+
         span{
             color: #64ffda;
         }
@@ -40,6 +68,18 @@
     p{
         font-size: 12px;
         color: #a8b2d1;
+
+        @include breakpoint(sm,max){
+            font-size: 10px;
+        }
+    
+        @include breakpoint(md,max){
+            font-size: 10px;
+        }
+    
+        @include breakpoint(lg,max){
+            font-size: 10px;
+        }
     }
 }
 
@@ -58,6 +98,18 @@
     @include flex-container(row,flex-start,center);
     gap: 16px;
 
+    @include breakpoint(sm,max){
+        gap: 13px;
+    }
+
+    @include breakpoint(md,max){
+        gap: 13px;
+    }
+
+    @include breakpoint(lg,max){
+        gap: 13px;
+    }
+
     li{
         display: inline;
         color: #a8b2d1;
@@ -66,6 +118,19 @@
         font-weight: 300;
         width: 100%;
         font-family: 'Fira Sans', sans-serif;
+
+        @include breakpoint(sm,max){
+            font-size: 13px;
+        }
+    
+        @include breakpoint(sm,max){
+            font-size: 13px;
+        }
+    
+        @include breakpoint(sm,max){
+            font-size: 13px;
+        }
+        
 
         span{
             color: #64ffda;
