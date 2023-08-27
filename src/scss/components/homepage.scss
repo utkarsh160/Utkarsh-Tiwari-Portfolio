@@ -7,17 +7,17 @@
     gap: 8rem;
 
     @include breakpoint(sm,max){
-        padding: 2.25rem 1rem 2rem 1rem;
+        padding: 6.25rem 1rem 2rem 1rem;
         gap: 2.75rem;
     }
 
     @include breakpoint(md,max){
-        padding: 2.25rem 1rem 2rem 1rem;
+        padding: 6.25rem 1rem 2rem 1rem;
         gap: 4.75rem;
     }
 
     @include breakpoint(lg,max){
-        padding: 2.25rem 1rem 2rem 1rem;
+        padding: 6.25rem 1rem 2rem 1rem;
         gap: 4.75rem;
     }
 }

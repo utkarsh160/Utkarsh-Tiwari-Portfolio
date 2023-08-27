@@ -1,0 +1,33 @@
+@use '../utils/' as *;
+
+footer{
+    @include flex-container(column,center,center);
+    gap: 16px;
+    padding: 1rem;
+
+    #footer-nav{
+        @include flex-container(row,center,center);  
+        
+        ul{
+            @include flex-container(row,center,center);  
+            gap: 20px;
+            
+            li{
+                @include flex-container(row,center,center);
+                width: 20px; 
+                height: 20px;            
+            }
+        }
+
+        @include breakpoint(lg,min){
+            display: none;
+        }
+
+    }
+
+    p{
+        font-family: "Fira Code", monospace;
+        color: #CCDCF6;
+        font-size: 12px;
+    }
+}

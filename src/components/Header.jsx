@@ -1,4 +1,3 @@
-import { Link } from 'gatsby'
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import React, { useState } from 'react'
 import Hamburger from '../images/Hamburger.svg'
@@ -27,9 +26,9 @@ const Header = () => {
                     <AnchorLink to='#experience-main-section'>
                     <li>Experience</li>
                     </AnchorLink>
-                    <AnchorLink to='#work-main-section'>
+                    {/* <AnchorLink to='#work-main-section'>
                     <li>Work</li>
-                    </AnchorLink>
+                    </AnchorLink> */}
                     <AnchorLink to='#contact-main-section'>
                     <li>Contact</li>
                     </AnchorLink>
@@ -49,16 +48,16 @@ const Header = () => {
             <nav className='sidebar-nav'>
                 <ul>
                     <AnchorLink to='#about-main-section'>
-                    <li>About</li>
+                    <li onClick={handleSidebarToggle}>About</li>
                     </AnchorLink>
                     <AnchorLink to='#experience-main-section'>
-                    <li>Experience</li>
+                    <li onClick={handleSidebarToggle}>Experience</li>
                     </AnchorLink>
-                    <AnchorLink to='#work-main-section'>
-                    <li>Work</li>
-                    </AnchorLink>
+                    {/* <AnchorLink to='#work-main-section'>
+                    <li onClick={handleSidebarToggle}>Work</li>
+                    </AnchorLink> */}
                     <AnchorLink to='#contact-main-section'>
-                    <li>Contact</li>
+                    <li onClick={handleSidebarToggle}>Contact</li>
                     </AnchorLink>
                     <li>
                         <a className='primary-btn' href={Resume} download>

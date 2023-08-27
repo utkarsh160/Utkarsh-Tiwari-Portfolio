@@ -9,14 +9,14 @@ const Introduction = () => {
         <div className="introduction-left">
             <p>Hey! My Name is</p>
             <p className='introduction-name n-font-3'>Utkarsh Tiwari</p>
-            <p className='introduction-position n-font-3'> 
+            <div className='introduction-position n-font-3'> 
             <Typewriter
             options={{
               strings: ['Transforming Ideas into Code !', 'Elevating Experiences with Code !'],
               autoStart: true,
               loop: true,
             }}
-          /></p>
+          /></div>
             <p>Software Developer at uFaber</p>
         </div>
     </section>
