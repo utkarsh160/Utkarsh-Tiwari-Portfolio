@@ -58,6 +58,7 @@
 }
 
 #hamburger-icon{
+    @include flex-container(row,center,space-between);
     width: 20px;
     height: 20px;
     @include breakpoint(lg,min){
@@ -70,6 +71,7 @@
 }
 
 #close-icon{
+    @include flex-container(row,center,space-between);
     width: 20px;
     height: 20px;
     @include breakpoint(lg,min){
