@@ -2,7 +2,7 @@ import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import React, { useState } from 'react'
 import Hamburger from '../images/Hamburger.svg'
 import Close from '../images/Close.svg'
-import Resume from '../assets/Utkarsh_Tiwari.pdf'
+import Resume from '../assets/Utkarsh Tiwari.pdf'
 
 const Header = () => {
 

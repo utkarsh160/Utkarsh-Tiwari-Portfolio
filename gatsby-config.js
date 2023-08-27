@@ -6,12 +6,15 @@ module.exports = {
     title: `Utkarsh Tiwari Portfolio`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  // flags: {
-  //   DEV_SSR: true
-  // },
   plugins: [
     `gatsby-plugin-sass`,
     "gatsby-plugin-netlify",
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        "icon": "src/images/apple-touch-icon.png"
+      }
+    },
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
