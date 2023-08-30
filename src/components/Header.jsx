@@ -18,20 +18,12 @@ const Header = () => {
         <nav className="header-nav">
           <ul>
             <AnchorLink to="#about-main-section">
-              <li
-                data-sal="slide-down"
-                data-sal-delay="300"
-                data-sal-easing="ease"
-              >
+              <li>
                 About
               </li>
             </AnchorLink>
             <AnchorLink to="#experience-main-section">
-              <li
-                data-sal="slide-down"
-                data-sal-delay="500"
-                data-sal-easing="ease"
-              >
+              <li>
                 Experience
               </li>
             </AnchorLink>
@@ -39,11 +31,7 @@ const Header = () => {
                     <li>Work</li>
                     </AnchorLink> */}
             <AnchorLink to="#contact-main-section">
-              <li
-                data-sal="slide-down"
-                data-sal-delay="700"
-                data-sal-easing="ease"
-              >
+              <li>
                 Contact
               </li>
             </AnchorLink>
@@ -52,10 +40,7 @@ const Header = () => {
                 className="primary-btn"
                 href={Resume}
                 download
-                data-sal="slide-down"
-                data-sal-delay="900"
-                data-sal-easing="ease"
-              >
+               >
                 Resume
               </a>
             </li>
